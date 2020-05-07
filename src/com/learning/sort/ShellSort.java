@@ -5,8 +5,8 @@ import java.util.Arrays;
 public class ShellSort {
 
     public static void main(String[] args) {
-        int[] array = new int[] {8, 9, 1, 7, 2, 3, 5, 4, 6, 0};
-        System.out.println(Arrays.toString(shellSort(array)));
+        int[] array = new int[] {8, 9, 9, 1, 7, 2, 3, 5, 5, 4, 6, 0};
+        Arrays.toString(shellSort(array));
     }
 
     private static int[] shellSort(int[] array) {
