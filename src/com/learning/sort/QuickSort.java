@@ -14,6 +14,7 @@ public class QuickSort {
             return;
         }
         int index = split(array, fromIndex, toIndex);
+        System.out.println(Arrays.toString(array));
         quickSort(array, fromIndex, index - 1);
         quickSort(array, index + 1, toIndex);
     }
@@ -31,7 +32,6 @@ public class QuickSort {
             array[toIndex] = array[fromIndex];
         }
         array[fromIndex] = temp;
-        System.out.println(Arrays.toString(array));
         return fromIndex;
     }
 }

@@ -6,7 +6,7 @@ public class ShellSort {
 
     public static void main(String[] args) {
         int[] array = new int[] {8, 9, 9, 1, 7, 2, 3, 5, 5, 4, 6, 0};
-        Arrays.toString(shellSort(array));
+        shellSort(array);
     }
 
     private static int[] shellSort(int[] array) {

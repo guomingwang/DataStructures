@@ -10,7 +10,7 @@ public class SelectSort {
 
     public static void main(String[] args) {
         int[] array = new int[] {8, 9, 9, 1, 7, 2, 3, 5, 5, 4, 6, 0};
-        System.out.println(Arrays.toString(selectSort(array)));
+        selectSort(array);
     }
 
     private static int[] selectSort(int[] array) {
@@ -29,6 +29,7 @@ public class SelectSort {
             int temp = array[i];
             array[i] = maxValue;
             array[maxIndex] = temp;
+            System.out.println(Arrays.toString(array));
         }
         return array;
     }

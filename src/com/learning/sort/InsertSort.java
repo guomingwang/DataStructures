@@ -10,7 +10,7 @@ public class InsertSort {
 
     public static void main(String[] args) {
         int[] array = new int[] {8, 9, 9, 1, 7, 2, 3, 5, 5, 4, 6, 0};
-        System.out.println(Arrays.toString(insertSort(array)));
+        insertSort(array);
     }
 
     private static int[] insertSort(int[] array) {
@@ -25,6 +25,7 @@ public class InsertSort {
                 j--;
             }
             array[++j] = temp;
+            System.out.println(Arrays.toString(array));
         }
         return array;
     }
